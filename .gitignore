@@ -1,0 +1,25 @@
+# Local configuration and secrets
+.env
+.env.*
+!.env.example
+
+# Local admin exports and browser backups
+*-sauvegarde-*.json
+*-backup-*.json
+admin-export*.json
+
+# Temporary media-generation material
+tmp/
+**/tmp/
+
+# Build and dependency output
+node_modules/
+dist/
+build/
+.cache/
+
+# Operating-system and editor files
+.DS_Store
+Thumbs.db
+Desktop.ini
+.vscode/

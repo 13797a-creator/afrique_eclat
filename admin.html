@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex,nofollow">
+  <title>Administration locale — Afrique Éclat</title>
+  <link rel="stylesheet" href="admin.css?v=20261124-1">
+</head>
+<body>
+  <div class="admin-shell">
+    <aside class="admin-sidebar">
+      <a class="admin-brand" href="index.html"><span class="brand-mark">É</span><span>AFRIQUE ÉCLAT<small>ESPACE ÉDITORIAL</small></span></a>
+      <p class="sidebar-label">GÉRER LE SITE</p>
+      <nav aria-label="Administration">
+        <button class="admin-nav active" data-kind="overview"><span>◫</span>Vue d’ensemble</button>
+        <button class="admin-nav" data-kind="books"><span>▤</span>Livres <b id="nav-books">0</b></button>
+        <button class="admin-nav" data-kind="authors"><span>◉</span>Auteurs <b id="nav-authors">0</b></button>
+        <button class="admin-nav" data-kind="news"><span>▧</span>Actualités <b id="nav-news">0</b></button>
+      </nav>
+      <div class="sidebar-bottom"><span class="local-pulse"></span> DONNÉES LOCALES<br><small>Enregistrées dans ce navigateur</small></div>
+    </aside>
+    <main class="admin-main">
+      <header class="admin-topbar"><div><p class="eyebrow">ESPACE DE GESTION</p><h1 id="page-title">Vue d’ensemble</h1></div><div class="top-actions"><a class="preview-link" href="index.html" target="_blank" rel="noopener">Ouvrir le site ↗</a><span class="admin-avatar">AE</span></div></header>
+      <section class="local-notice" role="note"><strong>Mode local</strong><span>Les changements ne sont enregistrés que dans ce navigateur. Ils ne sont pas publiés et cet écran n’est pas protégé pour un hébergement public.</span></section>
+      <section id="overview-panel" class="overview-panel">
+        <div class="welcome-card"><div><p class="eyebrow">VOTRE MAISON D’ÉDITION</p><h2>Le contenu du site,<br><em>à portée de main.</em></h2><p>Modifiez les fiches du catalogue, les notices d’auteurs et les nouvelles du carnet. Enregistrez une sauvegarde avant tout grand changement.</p><button class="primary-button" data-open-kind="books">Gérer le catalogue <span>↗</span></button></div><div class="welcome-ornament" aria-hidden="true"><span></span><b>AE</b><i></i></div></div>
+        <div class="stats-grid"><article><span>OUVRAGES</span><strong id="stat-books">0</strong><small>Dans le catalogue</small></article><article><span>AUTEURS</span><strong id="stat-authors">0</strong><small>Notices répertoriées</small></article><article><span>ACTUALITÉS</span><strong id="stat-news">0</strong><small>Dans le carnet</small></article></div>
+        <div class="backup-card"><div><p class="eyebrow">SAUVEGARDE ET TRANSFERT</p><h2>Gardez une copie<br>de vos données.</h2><p>Exportez un fichier JSON pour le conserver ou le transférer sur un autre navigateur.</p></div><div class="backup-actions"><button id="export-data" class="primary-button">Exporter la sauvegarde ↓</button><label class="secondary-button" for="import-data">Importer une sauvegarde ↑</label><input id="import-data" type="file" accept="application/json,.json" hidden><button id="reset-data" class="text-button">Restaurer le contenu d’origine</button></div></div>
+        <div class="next-steps"><span class="step-number">01</span><div><strong>Choisissez un espace</strong><p>Livres, auteurs ou actualités dans la navigation à gauche.</p></div><span class="step-number">02</span><div><strong>Modifiez puis enregistrez</strong><p>Les pages publiques sur ce navigateur liront les nouvelles données.</p></div></div>
+      </section>
+      <section id="manager-panel" class="manager-panel" hidden>
+        <div class="manager-toolbar"><label class="admin-search"><span>⌕</span><input id="admin-search" type="search" placeholder="Rechercher dans la liste…" aria-label="Rechercher dans la liste"></label><button id="add-entry" class="primary-button">＋ Ajouter</button></div>
+        <div id="entry-list" class="entry-list"></div>
+      </section>
+      <section id="editor-panel" class="editor-panel" hidden>
+        <div class="editor-heading"><button id="cancel-editor" class="back-button">← Retour à la liste</button><span id="editor-mode" class="eyebrow">NOUVELLE FICHE</span><h2 id="editor-title">Ajouter</h2><p id="editor-intro">Complétez les informations ci-dessous.</p></div>
+        <form id="content-form"><div id="form-fields" class="form-fields"></div><div class="form-actions"><button type="submit" class="primary-button">Enregistrer les modifications <span>↗</span></button><button type="button" id="cancel-editor-bottom" class="secondary-button">Annuler</button></div></form>
+      </section>
+      <div id="toast" class="toast" role="status" aria-live="polite"></div>
+      <footer class="admin-footer"><span>ÉDITIONS AFRIQUE ÉCLAT · GESTION LOCALE</span><span>Vitrine statique · Sauvegarde JSON recommandée</span></footer>
+    </main>
+  </div>
+  <script src="catalogue-data.js?v=20261124-4"></script><script src="cms-data.js?v=20261124-1"></script><script src="admin.js?v=20261124-3"></script>
+</body>
+</html>
