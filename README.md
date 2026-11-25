@@ -1,5 +1,9 @@
 # Éditions Afrique Éclat — vitrine locale
 
+## Site public
+
+La vitrine est publiée sur [GitHub Pages](https://13797a-creator.github.io/afrique_eclat/) depuis `docs/` sur la branche `main`. Le dépôt source est [13797a-creator/afrique_eclat](https://github.com/13797a-creator/afrique_eclat). Après une modification du catalogue, lancez `node scripts/generate-sitemap.cjs` pour régénérer le sitemap dans les dossiers source et public.
+
 ## Lancer le site
 
 Depuis ce dossier, démarrez un serveur statique :
@@ -14,7 +18,7 @@ Ouvrez ensuite `http://localhost:8765/`. Le serveur doit rester actif dans la fe
 
 Accueil, maison, catalogue, fiches d’ouvrage, répertoire et profils d’auteurs, carnet d’actualités et contact. Le site comprend un carrousel éditorial pilotable, une expérience de livre à feuilleter, trois vidéos muettes à lancer manuellement, des filtres de catalogue, des points de vente signalés pour un titre, et des demandes de conseil/commande préparées pour WhatsApp. La page Contact possède une illustration dédiée d’échange autour d’un manuscrit, accompagnée des coordonnées et du formulaire.
 
-Le catalogue est défini dans `catalogue-data.js`. Les coordonnées et contenus éditoriaux sont reproduits dans les pages statiques. Les versions de `style.css`, `site.js` et `catalogue-data.js` sont versionnées dans les pages pour éviter de conserver une ancienne mise en cache.
+Le catalogue est défini dans `catalogue-data.js`. Les coordonnées et contenus éditoriaux sont reproduits dans les pages statiques. Les métadonnées canoniques et sociales sont gérées par `seo-meta.js`. Les versions CSS et JavaScript sont versionnées dans les pages pour éviter de conserver une ancienne mise en cache.
 
 ## Tableau de bord d’administration locale
 
@@ -30,8 +34,8 @@ Les images distribuées dans `assets` sont au format WebP, dont `contact-manuscr
 
 ## État de la boutique
 
-Le site est une vitrine statique. Il ne contient pas de panier, paiement, stock connecté, suivi de commande ni espace d’administration. Les commandes sont des demandes via WhatsApp, elles ne confirment pas automatiquement un achat. Les prix, ISBN, pagination et disponibilités doivent être confirmés par la maison ; le paiement en ligne nécessite un prestataire et un hébergement sécurisé.
+Le site est une vitrine statique. Il ne contient pas de panier, paiement, stock connecté, suivi de commande ni administration publique en ligne. Les commandes sont des demandes via WhatsApp, elles ne confirment pas automatiquement un achat. Les prix, ISBN, pagination et disponibilités doivent être confirmés par la maison ; le paiement en ligne nécessite un prestataire et un hébergement sécurisé.
 
 Les biographies et portraits officiels absents des sources n’ont pas été inventés. Certaines couvertures sont indiquées comme à venir ou remplacées par des maquettes typographiques. Les points de vente cités pour *Quand l’espoir renaît* proviennent d’une publication publique de la maison et ne garantissent pas le stock actuel.
 
-Pour l’audit des exigences et les éléments encore à fournir avant publication, consulter `VERIFICATION_CAHIER_DES_CHARGES.md`.
+Pour les exigences couvertes et les éléments éditoriaux encore attendus, consulter `VERIFICATION_CAHIER_DES_CHARGES.md`.

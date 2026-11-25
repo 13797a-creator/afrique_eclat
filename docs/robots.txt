@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://13797a-creator.github.io/afrique_eclat/sitemap.xml
