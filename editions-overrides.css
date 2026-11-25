@@ -1,0 +1,11 @@
+.wordmark .real-logo{width:54px;height:54px}
+.topbar .real-logo{width:58px;height:58px}
+.footer-new .real-logo{width:50px;height:50px}
+.contact-info>p{margin:14px 0 4px;color:#f3d17d;font-size:15px;line-height:1.5}
+.contact-info a[href^="tel:+221"],.contact-info a[href*="wa.me/221"]{font-weight:700}
+.back-cover-copy{margin:22px 0 25px;padding:20px 22px;background:#f1ece2;border-left:3px solid #a83a27}
+.back-cover-copy .eyebrow{margin:0 0 10px}
+.back-cover-copy>p:last-child{margin:0;font:16px/1.65 Georgia,serif;color:#39332e}
+.back-cover-copy img{display:block;width:min(100%,260px);max-height:380px;object-fit:contain;margin:0 0 16px;box-shadow:0 12px 24px #241b1720}
+.detail-cover img{max-width:80%;height:80%;object-fit:contain}
+@media(max-width:700px){.topbar .real-logo,.wordmark .real-logo,.footer-new .real-logo{width:46px;height:46px}.contact-info{overflow-wrap:anywhere}.back-cover-copy{padding:17px}}
