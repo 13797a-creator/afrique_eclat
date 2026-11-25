@@ -9,3 +9,5 @@
 .back-cover-copy img{display:block;width:min(100%,260px);max-height:380px;object-fit:contain;margin:0 0 16px;box-shadow:0 12px 24px #241b1720}
 .detail-cover img{max-width:80%;height:80%;object-fit:contain}
 @media(max-width:700px){.topbar .real-logo,.wordmark .real-logo,.footer-new .real-logo{width:46px;height:46px}.contact-info{overflow-wrap:anywhere}.back-cover-copy{padding:17px}}
+@media(max-width:850px){.journal-controls{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:0 20px;overflow:visible}.journal-controls button{white-space:normal;text-align:left;line-height:1.35;min-height:48px;padding:12px 0}}
+@media(max-width:700px){.journal-controls{grid-template-columns:repeat(2,minmax(0,1fr));gap:0 16px}.journal-controls button{font-size:9px;letter-spacing:.045em}.journal-controls button span{margin-left:4px}}
