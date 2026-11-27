@@ -2,11 +2,7 @@
   const detail=document.querySelector('#detail');
   if(!detail)return;
   const name=new URLSearchParams(location.search).get('id')||'';
-  let books=window.CATALOGUE||[];
-  try{
-    const saved=JSON.parse(localStorage.getItem(window.AE_CMS?.key||'ae-content-v1')||'{}');
-    if(Array.isArray(saved.books))books=saved.books;
-  }catch{}
+  const books=window.AE_CMS?.read()?.books||window.CATALOGUE||[];
   const book=books.find(item=>item.title===name);
   if(!book)return;
   const safeURL=value=>{

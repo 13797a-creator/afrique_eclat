@@ -7,7 +7,7 @@ const context = { window: {}, localStorage: { getItem: () => null } };
 vm.runInNewContext(fs.readFileSync(path.join(root, 'catalogue-data.js'), 'utf8'), context);
 const books = context.window.CATALOGUE || [];
 const authors = [...new Set(books.map(book => book.author).filter(Boolean))];
-const staticPages = ['index.html', 'maison.html', 'catalogue.html', 'auteurs.html', 'actualites.html', 'contact.html'];
+const staticPages = ['index.html', 'maison.html', 'catalogue.html', 'auteurs.html', 'actualites.html', 'galerie.html', 'contact.html'];
 const entries = [
   ...staticPages.map(file => `https://13797a-creator.github.io/afrique_eclat/${file}`),
   ...books.map(book => `https://13797a-creator.github.io/afrique_eclat/livre.html?id=${encodeURIComponent(book.title)}`),
