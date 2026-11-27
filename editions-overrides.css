@@ -11,3 +11,5 @@
 @media(max-width:700px){.topbar .real-logo,.wordmark .real-logo,.footer-new .real-logo{width:46px;height:46px}.contact-info{overflow-wrap:anywhere}.back-cover-copy{padding:17px}}
 @media(max-width:850px){.journal-controls{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:0 20px;overflow:visible}.journal-controls button{white-space:normal;text-align:left;line-height:1.35;min-height:48px;padding:12px 0}}
 @media(max-width:700px){.journal-controls{grid-template-columns:repeat(2,minmax(0,1fr));gap:0 16px}.journal-controls button{font-size:9px;letter-spacing:.045em}.journal-controls button span{margin-left:4px}}
+
+.detail-subtitle{margin:-.35rem 0 1.25rem;color:#6e5748;font:italic 1.05rem/1.4 Georgia,serif}.book-source-note{margin-top:1.5rem;padding-top:1rem;border-top:1px solid rgba(54,39,31,.18);font-size:.88rem;color:#655348}.book-source-note a{display:inline-block;margin-top:.35rem;color:#7a3228;text-decoration:underline;text-underline-offset:.18em}.author-nationality{margin:.2rem 0 .55rem;color:#705b4a;font-size:.88rem}
