@@ -18,3 +18,5 @@
 @media(prefers-reduced-motion:reduce){.gallery-card{transition:none;opacity:1;transform:none}}
 
 .book-editorial-photo{width:min(1080px,calc(100% - 40px));margin:clamp(48px,8vw,104px) auto;display:grid;grid-template-columns:minmax(0,1.2fr) minmax(260px,.8fr);align-items:center;gap:clamp(26px,5vw,72px);padding:clamp(18px,4vw,44px);background:#efede5;color:#26231f}.book-editorial-photo figure{margin:0;overflow:hidden;aspect-ratio:1.25}.book-editorial-photo img{display:block;width:100%;height:100%;object-fit:cover}.book-editorial-photo h2{font-size:clamp(2rem,4vw,3.8rem);line-height:1.02;margin:.3em 0}.book-editorial-photo p:not(.eyebrow){font-size:1.05rem;line-height:1.7}.book-editorial-photo a{display:inline-block;margin-top:14px;color:#7f271c;text-underline-offset:4px;font-weight:700}@media(max-width:700px){.book-editorial-photo{grid-template-columns:1fr;width:calc(100% - 28px);margin:48px auto;gap:22px}.book-editorial-photo figure{aspect-ratio:1.15}.book-editorial-photo h2{font-size:2.15rem}}
+
+.author-card-art.photo-backed .author-card-plate{display:none}
